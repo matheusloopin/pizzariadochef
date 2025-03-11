@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Trade+Winds&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Trade+Winds&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+.text-gradient {
+  background-image: linear-gradient(to right, #F0A400, #E1600A);
+  -webkit-background-clip: text; /* Para navegadores WebKit (Chrome, Safari) */
+  background-clip: text;
+  color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+}
+.custom-btn {
+  width: 130px;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 15 */
+.btn-15 {
+  background: linear-gradient(0deg, #F15112 0%, #F0A400 100%);
+  border: none;
+}
+.btn-15:hover {
+  background: linear-gradient(0deg, rgb(203, 102, 8) 0%, rgb(241, 97, 7) 100%);
+}
+.trade-winds {
+  font-family: "Trade Winds", system-ui;
+}
+.source-pro {
+  font-family:'Source Sans Pro', sans-serif;
+}
+.roboto-serif {
+  font-family: "Roboto Serif", serif;
+}
+.font-roboto {
+  font-family: "Roboto", serif;
+}
+.trade-winds-regular {
+  font-family: "Trade Winds", sans-serif;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+/*Digitando*/
+#cursor {
+  display: inline-block;
+  margin-left: 5px;
+  color: #F0A400;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/*botao menu*/
+/* Overlay escuro */
+
+/* Botão de abrir o menu */
+#botao {
+  position: fixed; /* Fixa o botão na tela */
+  top: 20px;
+  left: 20px;
+  z-index: 1001; /* Garante que o botão fique acima do overlay e do fundo amarelo */
+  transition: opacity 0.3s ease-in-out; /* Adiciona transição suave */
+}
+
+/* Esconde o botão de abrir quando o menu está ativo */
+#botao.hidden {
+  opacity: 0;
+  pointer-events: none; /* Impede cliques no botão escondido */
+}
+
+/* Overlay escuro */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  z-index: 999; /* Fica abaixo do fundo amarelo */
+}
+
+.overlay.active {
+  opacity: 0;
+  visibility: visible;
+}
+
+/* Efeito de slide-in */
+.move {
+  background: rgba(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: -100%; /* Começa fora da tela, à esquerda */
+  width: 100%;
+  height: 100vh;
+  transition: left 0.5s ease-in-out;
+  z-index: 1000; /* Garante que o fundo amarelo fique acima do overlay */
+}
+
+.move.active {
+  left: 0; /* Move para a posição original */
+}
+
+/* Botão de fechar o menu */
+#btx {
+  position: fixed; /* Fixa o botão na tela */
+  top: 20px;
+  right: 20px;
+  z-index: 1002; /* Garante que o botão de fechar fique acima de tudo */
+  display: none; /* Inicialmente escondido */
+}
+
+.move.active #btx {
+  display: block; /* Mostra o botão de fechar quando o fundo amarelo está ativo */
+}
+/* styles.css */
+html {
+  font-size: 16px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}

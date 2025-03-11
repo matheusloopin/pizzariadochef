@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <!----Wisper----->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body class=" *:box-border overflow-x-hidden bg-black">
+  <div class=" max-[768px]:mb-20 w-full overflow-hidden whitespace-nowrap bg-gradient-to-r from-[#F0A400] to-[#E1600A]">
+    <div class="marquee">
+      <p class=" text-white text-center px-4">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Promoções todos os sábados e domingos • Promoções todos os sábados e domingos •
+      </p>
+    </div>
+  </div>
+<header class="container bg-black max-w-[1400px] mx-auto">
+
+  <!---logo-->
+  <div class="flex justify-between items-center">
+    <div class="ml-10 w-[150px] max-[768px]:hidden max-[768px]:mt-30">
+      <a href="#"><img src="img/Hamburguer.png" alt="foto logo"></a>
+    </div>
+    <nav class="max-[768px]:hidden">
+      <ul class="*:text-white flex gap-8">
+        <li><a class="font-bold font-roboto hover:text-orange-400" href="#">Pedido</a></li>
+        <li><a class="font-bold font-roboto hover:text-orange-400" href="#">Cardápio</a></li>
+        <li><a class="font-bold font-roboto hover:text-orange-400" href="#">Cadastro</a></li>
+        <li class="mr-10"><a class="font-bold font-roboto hover:text-orange-400" href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!--Titúlo-->
+  <div class="px-2.5 mt-10 grid grid-cols-1 md:grid-cols-2">
+    <p class="text-white text-4xl md:text-6xl trade-winds-regular text-center px-2.5">
+      <span id="typing" class="text-[#F0A400]"></span><span id="cursor">|</span>
+    </p>
+    <div><img src="./img/principal.png" alt=""></div>
+  </div>
+  <h2 class="text-center text-3xl text-[#F0A400] mt-20 trade-winds-regular ">Promoções da Semana</h2>
+
+  
+<section id="promocoes">
+  <div class="container mx-auto">
+    <div class="swiper pb-12">
+      <ul class="swiper-wrapper mt-44 mb-10">
+        <li class="px-5 swiper-slide">
+          <div class="max-w-[300px] mx-auto"><img src="./img/promocoes/burger banner_1741545331482.jpg" alt=""></div>
+        </li>
+        <li class="px-5 swiper-slide">
+          <div class="max-w-[300px] mx-auto"><img  src="./img/promocoes/burger banner_1741545331482.jpg" alt=""></div>
+        </li>
+        <li class="px-5 swiper-slide">
+          <div class="max-w-[300px] mx-auto"><img src="./img/promocoes/burger banner_1741545331482.jpg" alt=""></div>
+        </li>
+        <li class="px-5 swiper-slide">
+          <div class="max-w-[300px] mx-auto"><img src="./img/promocoes/burger banner_1741545331482.jpg" alt=""></div>
+        </li>
+      </ul>
+      <div class="swiper-pagination">     
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+  <i class="ri-menu-fill text-5xl text-gradient rounded-md md:hidden cursor-pointer fixed top-[30px] mt-8 left-5" id="botao"></i>
+  <!-- Overlay escuro -->
+  <div class="overlay hidden"></div> 
+  <div class=" h-lvh w-full move">
+    <!-- Botão de fechar o menu -->
+    <i class="ri-close-large-line text-5xl text-gradient cursor-pointer fixed top-[30px] mt-8 right-5" id="btx"></i>
+    <!-- Itens do menu -->
+    <ul class="*:text-black *:text-3xl flex justify-center items-center  flex-col gap-6 mt-30">
+      <li><a class="font-bold text-center  font-roboto hover:text-orange-400" href="#">Pedido</a></li>
+      <li><a class="font-bold text-center font-roboto hover:text-orange-400" href="#">Cardápio</a></li>
+      <li><a class="font-bold font-roboto hover:text-orange-400" href="#">Cadastro</a></li>
+      <li><a class="font-bold font-roboto hover:text-orange-400" href="#">Contato</a></li>
+  </ul>
+  </div>
+</header> 
+<!----Seção Hamburguer Start----> 
+<section class="bg-[#F5F4F4] pb-20 ">
+  <div class="container mx-auto px-5  mt-10">
+    <h1 class="text-3xl flex pt-30 trade-winds text-[#E1600A] font-medium pb-10">Hamburgueres <span class="inline-block w-[30px] justify-self-center ml-3"><img src="./img/promocoes/hamburger-svgrepo-com.svg" alt="icone hamburguer"></span></h1>
+    <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 text-black source-pro">Big Meg Stark</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Pão caseiro exclusivo, hambúrguer suculento de picanha 90g, queijo mussarela derretido, alface crocante e tomate fresco, combinados em uma experiência artesanal irresistível.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 34,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 40,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class="w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/hamburguer/megStark.png" alt=""></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 text-black source-pro">Big Meg fitness</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Pão integral, peito de frango grelhado, abacate cremoso, quinoa, pepino crocante, tomate-cereja e um molho de iogurte leve, criando uma refeição ideal para quem busca energia e saúde.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 25,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 32,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class="w-[200px] min-w-[100px] mr-5 mt-10"><img src="./img/hamburguer/integral.jpg" alt=""></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 text-black source-pro">Big Salada</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Pão caseiro exclusivo, Mix de folhas frescas, tomate-cereja suculento, cenoura ralada, pepino crocante, queijo branco em cubos e croutons dourados, finalizados com um molho especial perfeito.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 20,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 25,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class="w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/hamburguer/salada.png" alt=""></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 text-black source-pro">Big Meg Duplo</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Dois hambúrgueres suculentos de 120g, queijo mussarela e cheddar derretidos, bacon crocante, presunto saboroso, ovo frito, alface-americana, tomate fresco</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 40,00</p>
+          <p class="source-pro pb-2 px-3 text-black text-[14px] line-through decoration-red-600">R$ 45,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class="w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/hamburguer/bigDuplo.png" alt=""></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 text-black source-pro">Big Artesanal</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Pão brioche dourado, hambúrguer Angus 150g suculento, queijo cheddar cremoso, bacon crocante, cebola caramelizada, alface-americana, tomate selecionado e um molho especial.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 34,99</p>
+          <p class="source-pro pb-2 px-3 text-black text-[14px] line-through decoration-red-600">R$ 40,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class="w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/hamburguer/artesanal.jpg" alt=""></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 text-black source-pro">Big Meg 2.0</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Pão brioche dourado, hambúrguer Angus 150g suculento, queijo Gouda derretido, bacon crocante, cebola caramelizada, alface-americana, tomate selecionado e um molho especial.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 30,99</p>
+          <p class="source-pro text-black pb-2 px-3 text-[14px] line-through decoration-red-600">R$ 35,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class="w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/hamburguer/artesanalPrime.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!----Seção Hamburguer End--->
+
+<!---Seção Pizza Start--->
+<section class="bg-[#F5F4F4] pt-10">
+  <div class="container mx-auto px-5  mt-10">
+    <h1 class="text-3xl flex trade-winds text-[#E1600A] font-medium pb-10">Pizza <span class="inline-block w-[30px] justify-self-center ml-3"><img src="./img/promocoes/pizza-svgrepo-com.svg" alt="icone pizza"></span></h1>
+    <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro">Calabreza 8/ft</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Massa artesanal macia e dourada, molho de tomate italiano temperado, generosas rodelas de calabresa defumada, mussarela derretida e orégano fresco com um sabor Irresistível .</p>
+          <p class="source-pro px-3 text-[20px] font-black">R$ 36,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] line-through decoration-red-600">R$ 42,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class="w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/pizza/Pizza_de_calabresa_acebolada_e_azeitona.jpg" alt=""></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-black">Pizza Vegana 8/ft</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Pizza vegana chinesa com massa integral leve e crocante, molho de tomate orgânico, berinjela grelhada, cogumelos frescos, tofu defumado, azeitonas pretas e rúcula selvagem muito saborosa.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 25,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 32,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class="w-[200px] min-w-[100px] mr-5 mt-10"><img src="./img/pizza/pizzavegana-Photoroom.jpg" alt="foto pizza vegana"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 text-black source-pro">4-Queijos 8/ft</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Massa fina e crocante, molho de tomate artesanal, mussarela derretida, gorgonzola cremoso, parmesão ralado e provolone picante, uma explosão de sabores e texturas que derrete na boca.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 39,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 45,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class="w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/pizza/quatroqueijo.jpg" alt=""></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 text-black source-pro">Da casa 8/ft</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Massa artesanal de fermentação lenta, molho secreto da casa, linguiça calabresa defumada, queijo coalho, cebola roxa caramelizada, pimenta biquinho e manjericão fresco.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 40,00</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 45,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt="icone carrinho de compra"></span></button>
+        </div>
+        <div class="w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/pizza/dacasa.jpg" alt="pizza da casa"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-black">Napolitana 8/ft</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Pão brioche dourado, hambúrguer Angus 150g suculento, queijo cheddar cremoso, bacon crocante, cebola caramelizada, alface-americana, tomate selecionado e um molho especial.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 34,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 40,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt="icone carrinho de compras"></span></button>
+        </div>
+        <div class="w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/pizza/napolitana.jpg" alt="foto pizza napolitana"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-black">Especial 8/ft</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Massa leve e crocante, molho pomodoro artesanal, figos frescos, presunto parma, rúcula selvagem, mussarela de búfala e redução balsâmica, um sabor sofisticado que celebra a arte da pizza.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 55,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 40,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class="w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/pizza/especial.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!---Seção Pizza End--->
+
+<!---Seção Porções Start--->
+<section class="bg-[#F5F4F4] pt-10">
+  <div class="container mx-auto px-5  mt-10">
+    <h1 class="text-3xl flex pt-20 trade-winds text-[#E1600A] font-medium pb-10">Porções <span class="inline-block w-[30px] justify-self-center ml-3"><img src="./img/promocoes/tray-svgrepo-com.svg" alt="icone porção"></span></h1>
+    <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-black">Mista</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Porção Prime com batata frita crocante, calabresa, carne bovina suculenta, queijo suíço derretido, maionese cremosa e uma deliciosa salada fresquinha – uma combinação irresistível de sabores.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 50,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 55,99</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt="icone carrinho de compras"></span></button>
+        </div>
+        <div class=" w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/porcoes/porcao-mista-Photoroom.jpg" alt="foto porção"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-black">Bt / calabresa</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Porção irresistível de batata crocante acompanhada de calabresa suculenta , combinando o sabor da fritura perfeita com a intensidade da calabresa, criando um prato cheio de sabor e satisfação.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 45,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 60,00</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt="icone carrinho de compras"></span></button>
+        </div>
+        <div class=" w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/porcoes/porcao-de-batatas-fritas-Photoroom.jpg" alt="foto porção"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-black">Bt / Requeijão</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Porção deliciosa de batata crocante coberta com requeijão cremoso , criando uma combinação perfeita entre o sabor leve da batata e a cremosidade do requeijão, para uma experiência irresistível.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 40,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 55,00</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt="icone carrinho de compras"></span></button>
+        </div>
+        <div class=" w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/porcoes/porcao-de-batatas-fritas-reque-Photoroom.jpg" alt="foto porção"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex items-start">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-black">Bt / Frango</h2>
+          <p class="source-pro pb-2 px-3 text-[#36454F] text-sm">Saboroso prensado de frango , com pedaços suculentos de frango grelhado, temperados na medida certa, tudo prensado até ficar crocante, combinação perfeita de sabor e textura.</p>
+          <p class="source-pro px-3 text-[20px] text-black font-bold">R$ 39,99</p>
+          <p class="source-pro pb-2 px-3 text-[14px] text-black line-through decoration-red-600">R$ 47,00</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt="icone carrinho de compras"></span></button>
+        </div>
+        <div class=" w-[200px] mr-5 mt-10 min-w-[100px]"><img src="./img/porcoes/prensado-de-frango-no-Photoroom.jpg" alt="foto porção"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!---Seção Porções End--->
+
+
+<!---Seção Bebidas Start--->
+<section class="bg-[#F5F4F4] pt-10">
+  <div class="container mx-auto px-5  mt-10">
+    <h1 class="text-3xl flex pt-20 trade-winds text-[#E1600A] font-medium pb-10">Bebida <span class="inline-block w-[30px] justify-self-center ml-3"><img src="./img/promocoes/bebida.svg" alt="icone bebida"></span></h1>
+    <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div class="bg-white max-w-[518px] shadow-sm flex justify-between">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 text-black source-pro text-nowrap">Coca Cola 600ml</h2>
+          
+          <p class="source-pro px-3 text-[20px] pb-2.5 text-black font-bold">R$ 8,00</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class=" mr-5 mt-3"><img width="60px" src="./img/bebidas/coca-600.png" alt="foto coca cola"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex justify-between">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-nowrap text-black">Coca Cola 350ml</h2>
+          
+          <p class="source-pro px-3 text-[20px] pb-2.5 text-black font-bold">R$ 5,00</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class=" mr-5 mt-10"><img width="60px" src="./img/bebidas/coca-lata.png" alt="foto coca cola"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex justify-between">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-nowrap text-black">Coca Cola 1L</h2>
+          
+          <p class="source-pro px-3 text-[20px] pb-2.5 text-black font-bold">R$ 10,00</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class=" mr-5 mt-3 mb-5"><img width="60px" height="130px" src="./img/bebidas/coca-cola-de-1-litro.jpg" alt="foto coca cola"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex justify-between">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-nowrap text-black">Guaraná 350ml</h2>
+          
+          <p class="source-pro px-3 text-[20px] pb-2.5 text-black font-bold">R$ 6,00</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class=" mr-5 mt-10"><img width="60px" src="./img/bebidas/guarana-lata.png" alt="foto guarana"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex justify-between">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-nowrap text-black">Água com gás 500ml</h2>
+          
+          <p class="source-pro px-3 text-[20px] pb-2.5 text-black font-bold">R$ 4,00</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class=" mr-5 mt-3"><img width="60px" src="./img/bebidas/aguaGas.jpg" alt="foto agua com gás"></div>
+      </div>
+      <div class="bg-white max-w-[518px] shadow-sm flex justify-between">
+        <div>
+          <h2 class="text-[20px] pb-2.5 mt-5 px-3 source-pro text-nowrap text-black">Água com gás 500ml</h2>
+          
+          <p class="source-pro px-3 text-[20px] pb-2.5 text-black font-bold">R$ 4,00</p>
+         <button class=" flex justify-center mb-5 py-1.5 mx-3 bg-gradient-to-br text-[20px]  cursor-pointer text-center text-white custom-btn btn-15">Adicionar <span class="inline-block w-[20px]"><img src="./img/promocoes/vista-lateral-vazia-do-carrinho-de-compras (1).png" alt=""></span></button>
+        </div>
+        <div class=" mr-5 mt-3"><img width="60px" src="./img/bebidas/aguaSem.jpg" alt="foto agua sem gás"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!---Seção Bebidas End--->
+
+<!---Seção Depoimentos Start--->
+<section class="bg-[#F5F4F4] pt-20">
+  <div class="container mx-auto  mt-10">
+    <h1 class="text-4xl text-black mb-10  font-roboto text-center">Depoimentos<h1>
+    <div class="container mx-auto px-10 py-30 bg-[#FFFAFA] ">
+      <div>
+        <div class="swiper flex justify-center">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <div class="grid gap-10 grid-cols-1 justify-items-center">
+                  <div class="max-w-[276px]"><img src="./img/depoimentos/primeira1.jpg" alt=""></div>
+                  <p class="mt-5 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos ducimus quos accusantium iste autem quae tempora excepturi quisquam neque?</p>
+            </li>
+            <li class="swiper-slide">
+              <div class="grid gap-10 grid-cols-1 justify-items-center">
+                 <div class="max-w-[276px]"><img src="./img/depoimentos/primeira1.jpg" alt=""></div>
+                  <p
+                  class="mt-5 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos ducimus quos accusantium iste autem quae tempora excepturi quisquam neque?</p>
+                </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="grid gap-10 grid-cols-1 justify-items-center">
+
+                 <div class="max-w-[276px]"><img src="./img/depoimentos/primeira1.jpg" alt=""></div>
+                <p class="mt-5 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos ducimus quos accusantium iste autem quae tempora excepturi quisquam neque?</p>
+              
+            </li>
+            <li class="swiper-slide">
+              <div class="grid gap-10 grid-cols-1 justify-items-center">
+
+                 <div class="max-w-[276px]"><img src="./img/depoimentos/primeira1.jpg" alt=""></div>
+                <p class="mt-5 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos ducimus quos accusantium iste autem quae tempora excepturi quisquam neque?</p>
+   
+            </li>
+            <li class="swiper-slide">
+              <div class="grid gap-10 grid-cols-1 justify-items-center">
+                 <div class="max-w-[276px]"><img src="./img/depoimentos/primeira1.jpg" alt=""></div>
+                <p class="mt-5 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos ducimus quos accusantium iste autem quae tempora excepturi quisquam neque?</p>
+            </li>
+          </ul>
+          <!-- If we need pagination -->
+
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!---Seção Depoimentos End--->
+
+<!---Seção Perguntas Start--->
+<section class="bg-[#0c0c0c] pt-10 mt-20">
+  <div class="container mx-auto px-5  mt-10">
+    <h1 class=" custom-text md:justify-normal flex justify-center items-center text-4xl min-w-[385px]:text-4xl text-white pb-20">Perguntas Frequentes <span class=" w-[30px] ml-2.5 block"><img class="fill-amber-700" src="./img/promocoes/pergunta-para-fazer-login-em-circulos.png" alt="icone de interrogação"></span></h1>
+    <div class="md:flex md:justify-between">
+      <div class="grid grid-cols-1 gap-5 relative">
+        <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300  md:min-w-[700px] lg:min-w-[800px] max-w-[800px] border">
+          <div class="collapse-title font-semibold font-roboto">Quais formas de pagamento são aceitas?</div>
+          <div class="collapse-content font-roboto text-sm italic text-[#63460A]">
+            Aceitamos dinheiro, Pix, cartão de crédito/débito e carteiras digitais.
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 md:min-w-[700px] lg:min-w-[800px] max-w-[800px] border">
+          <div class="collapse-title font-semibold font-roboto">Vocês fazem entrega?</div>
+          <div class="collapse-content text-sm font-roboto italic text-[#63460A]">
+            Sim, realizamos entregas. Consulte a taxa e a área de cobertura.
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 md:min-w-[700px] lg:min-w-[800px] max-w-[800px] border">
+          <div class="collapse-title font-semibold font-roboto">Você está oferecendo descontos ou promoções?</div>
+          <div class="collapse-content text-sm font-roboto italic text-[#63460A]">
+            Sim! Fique de olho em nossas redes sociais para conferir promoções especiais.
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 md:min-w-[700px] lg:min-w-[800px] max-w-[800px] border">
+          <div class="collapse-title font-semibold font-roboto">Quanto tempo leva para o serviço ser concluído?</div>
+          <div class="collapse-content text-sm font-roboto italic text-[#63460A]">
+            O tempo varia conforme o serviço, mas geralmente dura entre 40 e 60 minutos .
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 md:min-w-[700px] lg:min-w-[800px] max-w-[800px] border">
+          <div class="collapse-title font-semibold font-roboto">Tem estacionamento no local?</div>
+          <div class="collapse-content text-sm font-roboto italic text-[#63460A]">
+            Sim, temos estacionamento próprio/gratuito ou estacionamento próximo.
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 md:min-w-[700px] lg:min-w-[800px] max-w-[800px] border">
+          <div class="collapse-title font-semibold font-roboto">Qual é o valor mínimo para entrega?</div>
+          <div class="collapse-content text-sm font-roboto italic text-[#63460A]">
+            O valor mínimo para entrega é R$30. Os pedidos abaixo desse valor podem ser retirados no local.
+          </div>
+        </div>
+      </div>
+      <div class="w-[400px] absolute top-[-10] right-[-10]"><img class=" opacity-15 hidden md:block" src="./img/subprime.png" alt=""></div>
+    </div>
+  </div>
+</section>
+<!---Seção Perguntas End--->
+
+<!---Seção Informações Start--->
+<footer class="bg-[#0c0c0c] pt-10 mt-50">
+  <div class="container mx-auto">
+    <h1 class="text-4xl text-white text-center md:text-start md:pl-5 mb-20">Informações</h1>
+    <div class="px-5 grid gap-5 justify-center items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <div class=" *:pb-2.5">
+        <h1 class="text-[#F9B31B] text-2xl">Contato</h1>
+        <p class="text-[#A6A299]">Telefone: <span>31 9999-99999</span></p>
+        <p  class="text-[#A6A299]">Email: <span>matheus97salvatory@gmail.com</span></p>
+        <p  class="text-[#A6A299]">Estado: <span>Minas Gerais</span></p>
+        <p  class="text-[#A6A299]">Cidade: <span>Contagem</span></p>
+      </div>
+      <div class="*:pb-2.5">
+        <h1 class="text-[#F9B31B] text-2xl">Redes Sociais</h1>
+        <p  class="text-[#A6A299]">Instagram: <span>dochef234@gmail.com</span></p>
+        <p  class="text-[#A6A299]">linkedin: <span>dochefperfil@gamil.com</span></p>
+        <p  class="text-[#A6A299]">You Tube: <span>Dochef2000</span></p>
+        <p  class="text-[#A6A299]">tiktok: <span>@docheff</span></p>
+      </div>
+      <div class=" *:pb-2.5">
+        <h1 class="text-[#F9B31B] text-2xl">Endereço Loja</h1>
+        <p  class="text-[#A6A299]">Bairro: <span>Logo ali</span></p>
+        <p  class="text-[#A6A299]">Rua: <span>Estou chegandp</span></p>
+        <p  class="text-[#A6A299]">Número: <span>123</span></p>
+        <p  class="text-[#A6A299]">Cep: <span>32123-11</span></p>
+      </div>
+    </div>
+    <p class="text-zinc-600 text-center mt-36">Todos os direitos reservados@-2025</p>
+  </div>
+</footer>
+<!---Seção Informações End--->
+
+
+
+
+<!-------------Swiper----------------------->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="./script.js"></script>
+</body>
+</html>
